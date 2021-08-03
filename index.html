@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./images/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Tip Calculator</title>
+  </head>
+  <body>
+    <header>
+      <h1>
+        spli <br />
+        tter
+      </h1>
+    </header>
+    <main>
+      <div class="wrapper">
+        <div class="input_card">
+          <!-- bill -->
+          <form action="" class="form">
+            <div class="form_group">
+              <label for="bill">Bill</label>
+              <input type="number" name="bill" id="bill" />
+              <img src="./images/icon-dollar.svg" alt="" />
+            </div>
+          </form>
+          <!-- select tip % -->
+          <div class="select_tip">
+            <p>Select Tip %</p>
+            <div class="btns_container">
+              <button class="tip_btn" data-tip="5">5%</button>
+              <button class="tip_btn" data-tip="10">10%</button>
+              <button class="tip_btn" data-tip="15">15%</button>
+              <button class="tip_btn" data-tip="25">25%</button>
+              <button class="tip_btn" data-tip="50">50%</button>
+              <button class="custom_btn">custom</button>
+              <input type="number" name="custom_tip" id="custom_tip" />
+            </div>
+          </div>
+          <!-- number of people -->
+          <form class="people">
+            <div class="form_group">
+              <label for="people">Number of People</label>
+              <input type="number" name="people" id="people" />
+              <img src="./images/icon-person.svg" alt="" />
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="output_card">
+        <div class="wrapper d_flex">
+          <div>
+            <!--  -->
+            <div class="output">
+              <div class="text">
+                <p>Tip Amount</p>
+                <small>/ person</small>
+              </div>
+              <div class="value">
+                <img src="./images/icon-dollar-1.svg" alt="icon-dollar" />
+                <p class="tip_res1">0.00</p>
+              </div>
+            </div>
+            <!--  -->
+            <div class="output">
+              <div class="text">
+                <p>Total</p>
+                <small>/ person</small>
+              </div>
+              <div class="value">
+                <img src="./images/icon-dollar-1.svg" alt="icon-dollar" />
+                <p class="tip_res2">0.00</p>
+              </div>
+            </div>
+          </div>
+          <button class="reset_btn" type="reset">RESET</button>
+        </div>
+      </div>
+    </main>
+
+    <script src="app.js"></script>
+    <!-- <script src="./index.js"></script> -->
+  </body>
+</html>
